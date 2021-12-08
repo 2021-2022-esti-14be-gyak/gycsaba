@@ -5,4 +5,10 @@
     <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Modell\" />
+    <Folder Include="Kivetel\" />
+    <Folder Include="Tarolo\" />
+  </ItemGroup>
+
 </Project>
