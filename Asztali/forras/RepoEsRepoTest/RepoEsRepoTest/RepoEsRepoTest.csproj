@@ -7,7 +7,6 @@
 
   <ItemGroup>
     <Folder Include="Kivetel\" />
-    <Folder Include="Tarolo\" />
   </ItemGroup>
 
 </Project>
