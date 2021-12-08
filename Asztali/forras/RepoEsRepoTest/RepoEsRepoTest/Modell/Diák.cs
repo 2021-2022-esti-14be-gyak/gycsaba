@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RepoEsRepoTest.Modell
 {
-    class Diák
+    public class Diák
     {
         private string vezetekNev;
         private string keresztNev;
