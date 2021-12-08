@@ -25,7 +25,16 @@ namespace RepoEsRepoTest.Modell
         {
             get
             {
-                return string.Empty;
+                if ((vezetekNev == null) || (keresztNev == null))
+                {
+                    string teljesNev = "Hibás név";
+                    return teljesNev;
+                }
+                else
+                {
+                    string teljesNev = vezetekNev + " " + keresztNev;
+                    return teljesNev;
+                }
             }
         }
 
