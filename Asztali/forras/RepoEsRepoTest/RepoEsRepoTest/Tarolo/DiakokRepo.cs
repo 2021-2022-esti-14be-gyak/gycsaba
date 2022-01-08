@@ -37,9 +37,9 @@ namespace RepoEsRepoTest.Tarolo
             return diakok.Exists(diak => diak == keresettDiak);
         }
 
-        public void Hozzad(Diak diák)
+        public void Hozzad(Diak diak)
         {
-            throw new NotImplementedException();
+            diakok.Add(diak);
         }
 
         public void Módosít(int azonosító, string vezetéknév)
