@@ -8,7 +8,7 @@ using RepoEsRepoTest.Tarolo.Interface;
 
 namespace RepoEsRepoTest.Tarolo
 {
-    class DiakokRepo : IDiakokRepo
+    public class DiakokRepo : IDiakokRepo
     {
         List<Diak> diakok;
 
@@ -16,6 +16,27 @@ namespace RepoEsRepoTest.Tarolo
         {
             diakok = new List<Diak>();
         }
+
+        public void  TestAdatok()
+        {
+            diakok.Add(new Diak("Kis", "János", 12, true));
+            diakok.Add(new Diak("Nagy", "Kelemen", 13, false));
+            diakok.Add(new Diak("Molnár", "Piroska", 12, true));
+        }
+
+        public int DiakokSzama
+        {
+            get
+            {
+                return diakok.Count;
+            }
+        }
+
+        public bool LetezikEDiak(Diak keresettDiak)
+        {
+            return diakok.Exists(diak => diak == keresettDiak);
+        }
+
         public void Hozzad(Diak diák)
         {
             throw new NotImplementedException();
