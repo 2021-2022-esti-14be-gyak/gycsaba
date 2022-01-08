@@ -19,7 +19,7 @@ namespace RepoEsRepoTest.Tarolo.Tests
             // Arrange
             DiakokRepo repo = new DiakokRepo();
             repo.TestAdatok();
-            Diak ujDiak = new Diak("Uj", "László", 13, true);
+            Diak ujDiak = new Diak(4,"Uj", "László", 13, true);
 
             // Act
             repo.Hozzad(ujDiak);

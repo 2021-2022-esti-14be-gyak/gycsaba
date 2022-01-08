@@ -8,13 +8,15 @@ namespace RepoEsRepoTest.Modell
 {
     public class Diak
     {
+        private int azonosito;
         private string vezetekNev;
         private string keresztNev;
         private int eletkor;
         private bool etkezes;
 
-        public Diak(string vezetekNev, string keresztNev, int eletkor, bool etkezes)
+        public Diak(int azonosito,string vezetekNev, string keresztNev, int eletkor, bool etkezes)
         {
+            this.Azonosito = azonosito;
             this.VezetekNev = vezetekNev;
             this.KeresztNev = keresztNev;
             this.Eletkor = eletkor;
@@ -52,5 +54,6 @@ namespace RepoEsRepoTest.Modell
         public string VezetekNev { get => vezetekNev; set => vezetekNev = value; }
         public string KeresztNev { get => keresztNev; set => keresztNev = value; }
         public int Eletkor { get => eletkor; set => eletkor = value; }
+        public int Azonosito { get => azonosito; set => azonosito = value; }
     }
 }

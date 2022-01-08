@@ -19,9 +19,9 @@ namespace RepoEsRepoTest.Tarolo
 
         public void  TestAdatok()
         {
-            diakok.Add(new Diak("Kis", "János", 12, true));
-            diakok.Add(new Diak("Nagy", "Kelemen", 13, false));
-            diakok.Add(new Diak("Molnár", "Piroska", 12, true));
+            diakok.Add(new Diak(1,"Kis", "János", 12, true));
+            diakok.Add(new Diak(2,"Nagy", "Kelemen", 13, false));
+            diakok.Add(new Diak(3,"Molnár", "Piroska", 12, true));
         }
 
         public int DiakokSzama
@@ -39,7 +39,7 @@ namespace RepoEsRepoTest.Tarolo
 
         public void Hozzad(Diak diak)
         {
-            diakok.Add(diak);
+            diakok.Add(diak);          
         }
 
         public void Módosít(int azonosító, string vezetéknév)
@@ -52,7 +52,7 @@ namespace RepoEsRepoTest.Tarolo
             throw new NotImplementedException();
         }
 
-        public void Töröl(int azonosito)
+        public void Torol(int azonosito)
         {
             throw new NotImplementedException();
         }

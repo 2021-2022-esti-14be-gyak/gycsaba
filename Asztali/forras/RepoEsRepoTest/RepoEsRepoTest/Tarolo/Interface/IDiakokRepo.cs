@@ -20,7 +20,7 @@ namespace RepoEsRepoTest.Tarolo.Interface
         /// A diák törlés a listából
         /// </summary>
         /// <param name="azonosito">A törlendő diák azonosítója</param>
-        public void Töröl(int azonosito);
+        public void Torol(int azonosito);
 
         /// <summary>
         /// Diák vezetéknevének módosítása
