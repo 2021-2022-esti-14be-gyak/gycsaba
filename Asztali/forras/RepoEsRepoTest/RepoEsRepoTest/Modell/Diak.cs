@@ -6,18 +6,18 @@ using System.Threading.Tasks;
 
 namespace RepoEsRepoTest.Modell
 {
-    public class Diák
+    public class Diak
     {
         private string vezetekNev;
         private string keresztNev;
         private int eletkor;
         private bool etkezes;
 
-        public Diák(string vezetekNev, string keresztNev, int eletkor, bool etkezes)
+        public Diak(string vezetekNev, string keresztNev, int eletkor, bool etkezes)
         {
-            this.vezetekNev = vezetekNev;
-            this.keresztNev = keresztNev;
-            this.eletkor = eletkor;
+            this.VezetekNev = vezetekNev;
+            this.KeresztNev = keresztNev;
+            this.Eletkor = eletkor;
             this.etkezes = etkezes;
         }
 
@@ -25,14 +25,14 @@ namespace RepoEsRepoTest.Modell
         {
             get
             {
-                if ((vezetekNev == null) || (keresztNev == null))
+                if ((VezetekNev == null) || (KeresztNev == null))
                 {
                     string teljesNev = "Hibás név";
                     return teljesNev;
                 }
                 else
                 {
-                    string teljesNev = vezetekNev + " " + keresztNev;
+                    string teljesNev = VezetekNev + " " + KeresztNev;
                     return teljesNev;
                 }
             }
@@ -42,9 +42,15 @@ namespace RepoEsRepoTest.Modell
         {
             get
             {
-                return true;
+                if (etkezes)
+                    return true;
+                else
+                    return false;
             }
         }
 
+        public string VezetekNev { get => vezetekNev; set => vezetekNev = value; }
+        public string KeresztNev { get => keresztNev; set => keresztNev = value; }
+        public int Eletkor { get => eletkor; set => eletkor = value; }
     }
 }

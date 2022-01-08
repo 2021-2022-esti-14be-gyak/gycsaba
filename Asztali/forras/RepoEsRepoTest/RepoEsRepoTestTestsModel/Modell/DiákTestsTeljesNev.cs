@@ -15,7 +15,7 @@ namespace RepoEsRepoTest.Modell.Tests
         public void DiákTeljesNévTestJóProgramozóPéter()
         {
             // arrange
-            Diák d = new Diák("Programozó", "Péter", 10, true);
+            Diak d = new Diak("Programozó", "Péter", 10, true);
             string elvártTeljesNév = "Programozó Péter";
 
             // act
@@ -29,7 +29,7 @@ namespace RepoEsRepoTest.Modell.Tests
         public void DiákTeljesNévTestNincsVezetéknév()
         {
             // arrange
-            Diák d = new Diák(null, "Péter", 10, true);
+            Diak d = new Diak(null, "Péter", 10, true);
             string elvártTeljesNév = "Hibás név";
 
             // act

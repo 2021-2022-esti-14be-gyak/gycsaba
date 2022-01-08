@@ -14,7 +14,7 @@ namespace RepoEsRepoTest.Tarolo.Interface
         /// A listához a diák hozzáadása
         /// </summary>
         /// <param name="diák">Ezt a diákok adjuk a listához</param>
-        public void Hozzad(Diák diák);
+        public void Hozzad(Diak diák);
 
         /// <summary>
         /// A diák törlés a listából
@@ -34,6 +34,6 @@ namespace RepoEsRepoTest.Tarolo.Interface
         /// </summary>
         /// <param name="azonosító">A módosítandó diák azonosítója</param>
         /// <param name="modosítottAdatok">Erre az adatokra módosítjuk a diák adatait</param>
-        public void Módosít(int azonosító, Diák modosítottAdatok);
+        public void Módosít(int azonosító, Diak modosítottAdatok);
     }
 }
